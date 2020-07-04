@@ -9,13 +9,9 @@ Esse projeto tem por finalidade adicionar repositórios usando a api do github, 
  <img src="https://github.com/demoraes/AppRepository/blob/master/img/detailRepository2.png"  />
 </p>
 
-## ⚙ Getting Started
-
-### Pré-requisitos
-
-  Para clonar o projeto em sua maquina local será necessario ter o   <b>[Git](https://git-scm.com)</b> instalado
-
 ### 🧭 Rodando o projeto
+
+Você precisa clonar o projeto em sua maquina local, será necessario ter o <b>[Git](https://git-scm.com)</b> instalado
 
 ```bash
 # Acesse a pasta do projeto no seu terminal/cmd
@@ -28,12 +24,3 @@ $ rode o comando -> yarn
 $ yarn start
 
 # A aplicação será aberta na porta:3000 - acesse http://localhost:3000
-
-
-
-
-
-
-
-
-
