@@ -1,6 +1,14 @@
 # AppRepository
 Esse projeto tem por finalidade adicionar repositórios usando a api do github, onde após o aplicação ter sido adicionada aparecera as issues juntamente com o link redirecionando para o github.
 
+![AppRepository](https://github.com/demoraes/AppRepository/blob/master/img/appRepository.gif)
+
+<p align="center">
+
+ <img src="https://github.com/demoraes/AppRepository/blob/master/img/addRepository.png"  />
+ <img src="https://github.com/demoraes/AppRepository/blob/master/img/detailRepository2.png"  />
+</p>
+
 ## ⚙ Getting Started
 
 ### Pré-requisitos
@@ -21,7 +29,9 @@ $ yarn start
 
 # A aplicação será aberta na porta:3000 - acesse http://localhost:3000
 
-![AppRepository]()
+
+
+
 
 
 
