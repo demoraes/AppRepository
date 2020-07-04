@@ -9,6 +9,13 @@ Esse projeto tem por finalidade adicionar repositórios usando a api do github, 
  <img src="https://github.com/demoraes/AppRepository/blob/master/img/detailRepository2.png"  />
 </p>
 
+### ⚙ Técnologias utilizadas
+<ul>
+  <li>Styled Components</li>
+  <li>Api do github</li>
+  <li>Axios</li>
+</ul>
+
 ### 🧭 Rodando o projeto
 
 Você precisa clonar o projeto em sua maquina local, será necessario ter o <b>[Git](https://git-scm.com)</b> instalado
