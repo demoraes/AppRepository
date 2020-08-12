@@ -7,10 +7,12 @@ export const Form = styled.form`
 
   input {
     flex: 1;
-    border: 1px solid #eee;
+    border: 1px solid ${(props) => (props.error ? '#ff6b6b' : '#eee')};
     padding: 10px 15px;
     border-radius: 4px;
     font-size: 16px;
+
+    transition: border 0.25s ease-out;
   }
 `;
 
@@ -33,6 +35,7 @@ export const SubmitButton = styled.button.attrs((props) => ({
   padding: 0 15px;
   margin-left: 10px;
   border-radius: 4px;
+  cursor: pointer;
 
   display: flex;
   justify-content: center;
