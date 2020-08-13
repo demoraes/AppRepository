@@ -16,6 +16,9 @@ export const Form = styled.form`
   }
 `;
 
+/**
+ * Começa em 0 graus e vai até 360 rotacionando
+ */
 const rotate = keyframes`
   from {
     transform:rotate(0deg);
@@ -28,6 +31,9 @@ const rotate = keyframes`
 
 export const SubmitButton = styled.button.attrs((props) => ({
   type: 'submit',
+  /**
+   * Seta disabled como true ou false baseado na propriedade loading
+   */
   disabled: props.loading,
 }))`
   background: #7159c1;

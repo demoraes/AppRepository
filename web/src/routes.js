@@ -9,6 +9,10 @@ export default function Routes() {
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Main} />
+        {/**
+         * Passando o repositório como parametro, onde é
+         * pego o valor no component Repository
+         */}
         <Route path="/repository/:repository" component={Repository} />
       </Switch>
     </BrowserRouter>
