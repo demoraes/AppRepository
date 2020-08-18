@@ -15,6 +15,7 @@ import {
   Info,
   Title,
   Author,
+  Button
 } from './styles';
 
 export default class User extends Component {
@@ -29,11 +30,13 @@ export default class User extends Component {
     stars: [],
     loading: false,
     page: 1,
+    refreshing: false,
   };
 
   async componentDidMount() {
     /**
-     * 
+     * 1) Monta a tela com os itens que estão no state
+     * 2) Passa page como parametro pra que a função load tenha o numero da pagina
      */
     const { page } = this.state;
     this.load(page);
@@ -43,24 +46,34 @@ export default class User extends Component {
 
   load = async (page) => {
     const { stars } = this.state;
+    // função de rotas
     const { route } = this.props;
+    // pegando o valor de user pelo parametro da rota
     const { user } = route.params;
 
 
-    this.setState({ loading: true });
 
+    this.setState({ loading: true });
 
     const response = await api.get(`/users/${user.login}/starred`, {
       params: { page }
     });
 
+
+    /**
+     * Verifica o numero de page é >= 2
+     */
     this.setState({
       stars: page >= 2 ? [...stars, ...response.data] : response.data,
       page,
       loading: false,
+      refreshing: false,
     });
   }
 
+  /**
+   * Função que é carregada quando atinge 20% do scroll
+   */
   loadMore = () => {
     const { page } = this.state;
 
@@ -68,6 +81,17 @@ export default class User extends Component {
 
     this.load(nextPage);
   };
+
+  refreshList = () => {
+    this.setState({ refreshing: true, stars: [] }, this.load);
+  };
+
+  handleNavigate = (repository) => {
+    const { navigation } = this.props;
+
+    navigation.navigate('Repository', { repository });
+  }
+
 
   render() {
     const { route } = this.props;
@@ -87,18 +111,22 @@ export default class User extends Component {
           <ActivityIndicator color="#7159c9" size={50} />
         ) : (
             <Stars
-              data={stars}
+              data={stars} // pega os dados do state
+              onRefresh={this.refreshList} // Função dispara quando o usuário arrasta a lista pra baixo
+              refreshing={this.state.refreshing} // Variável que armazena um estado true/false que representa se a lista está atualizando Restante das props
               onEndReachedThreshold={0.2} // Carrega mais itens quando chegar em 20% do fim
               onEndReached={this.loadMore} // Função que carrega mais itens
               keyExtractor={star => String(star.id)}
               renderItem={({ item }) => (
-                <Starred>
-                  <OwnerAvatar source={{ uri: item.owner.avatar_url }} />
-                  <Info>
-                    <Title>{item.name}</Title>
-                    <Author>{item.owner.login}</Author>
-                  </Info>
-                </Starred>
+                <Button onPress={() => this.handleNavigate(item)}>
+                  <Starred>
+                    <OwnerAvatar source={{ uri: item.owner.avatar_url }} />
+                    <Info>
+                      <Title>{item.name}</Title>
+                      <Author>{item.owner.login}</Author>
+                    </Info>
+                  </Starred>
+                </Button>
               )}
             />
           )}
