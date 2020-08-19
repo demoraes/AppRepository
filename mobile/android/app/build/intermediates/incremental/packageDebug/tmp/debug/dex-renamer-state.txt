@@ -1,4 +1,4 @@
-#Sun Jul 19 21:05:28 AMT 2020
+#Tue Aug 18 23:49:06 AMT 2020
 base.0=/var/www/html/rocketseat/bootcamp2019/modulo05/mobile/android/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

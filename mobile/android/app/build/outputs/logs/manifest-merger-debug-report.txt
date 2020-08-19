@@ -5,6 +5,7 @@ INJECTED from /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/android/app/
 INJECTED from /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/android/app/src/main/AndroidManifest.xml:1:1-26:12
 INJECTED from /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/android/app/src/main/AndroidManifest.xml:1:1-26:12
 MERGED from /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/android/app/src/main/AndroidManifest.xml:1:1-26:12
+MERGED from [:react-native-webview] /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
 MERGED from [:react-native-vector-icons] /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:@react-native-community_async-storage] /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:@react-native-community_masked-view] /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
@@ -79,6 +80,8 @@ application
 ADDED from /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/android/app/src/main/AndroidManifest.xml:6:5-24:19
 MERGED from /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/android/app/src/main/AndroidManifest.xml:6:5-24:19
 MERGED from /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/android/app/src/main/AndroidManifest.xml:6:5-24:19
+MERGED from [:react-native-webview] /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-webview] /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
 MERGED from [com.facebook.react:react-native:0.60.0] /home/gabriel/.gradle/caches/transforms-2/files-2.1/d09cdfae9da3d00c82c4a8ab7670c55c/AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.react:react-native:0.60.0] /home/gabriel/.gradle/caches/transforms-2/files-2.1/d09cdfae9da3d00c82c4a8ab7670c55c/AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.material:material:1.1.0] /home/gabriel/.gradle/caches/transforms-2/files-2.1/94740792d797d54abbda14f99b78f2c0/AndroidManifest.xml:22:5-20
@@ -143,6 +146,8 @@ uses-sdk
 INJECTED from /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/android/app/src/main/AndroidManifest.xml
 INJECTED from /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-webview] /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-webview] /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:@react-native-community_async-storage] /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
@@ -247,3 +252,19 @@ uses-permission#android.permission.SYSTEM_ALERT_WINDOW
 ADDED from /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/android/app/src/debug/AndroidManifest.xml:5:5-77
 	android:name
 		ADDED from /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/android/app/src/debug/AndroidManifest.xml:5:22-75
+provider#com.reactnativecommunity.webview.RNCWebViewFileProvider
+ADDED from [:react-native-webview] /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
+	android:grantUriPermissions
+		ADDED from [:react-native-webview] /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
+	android:authorities
+		ADDED from [:react-native-webview] /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-64
+	android:exported
+		ADDED from [:react-native-webview] /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+	android:name
+		ADDED from [:react-native-webview] /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-83
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:react-native-webview] /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:63
+	android:resource
+		ADDED from [:react-native-webview] /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-60
+	android:name
+		ADDED from [:react-native-webview] /var/www/html/rocketseat/bootcamp2019/modulo05/mobile/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67

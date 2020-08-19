@@ -564,6 +564,10 @@
         "source": "/home/gabriel/.gradle/caches/transforms-2/files-2.1/d30e355db3771d8fc1203defbbd38c0d/res/drawable-hdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
+        "merged": "/var/www/html/rocketseat/bootcamp2019/modulo05/mobile/android/app/build/intermediates/res/merged/debug/xml_file_provider_paths.xml.flat",
+        "source": "/var/www/html/rocketseat/bootcamp2019/modulo05/mobile/node_modules/react-native-webview/android/build/intermediates/packaged_res/debug/xml/file_provider_paths.xml"
+    },
+    {
         "merged": "/var/www/html/rocketseat/bootcamp2019/modulo05/mobile/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
         "source": "/home/gabriel/.gradle/caches/transforms-2/files-2.1/d30e355db3771d8fc1203defbbd38c0d/res/drawable-xxxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
     },
